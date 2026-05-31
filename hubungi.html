@@ -4,32 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kedai Barang Antik - Hubungi</title>
-    <style>
-        /* Salin bulat-bulat CSS yang sama supaya reka bentuk konsisten */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-        body { background-color: #f4f0ea; color: #3e3328; display: flex; flex-direction: column; min-height: 100vh; }
-        .header { background-color: #3e3328; color: #f4f0ea; text-align: center; padding: 35px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .header h1 { font-size: 26px; letter-spacing: 2px; margin-bottom: 15px; }
-        .nav { font-size: 15px; font-weight: bold; }
-        .nav a { text-decoration: none; color: #c4b5a3; margin: 0 12px; padding: 5px 10px; transition: all 0.3s ease; }
-        .nav a:hover, .nav a.active { color: #ffffff; background-color: #554637; border-radius: 4px; }
-        .container { flex: 1; max-width: 550px; width: 90%; margin: 50px auto; background: #ffffff; padding: 35px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e1dacb; }
-        .container h2 { font-size: 22px; text-align: center; margin-bottom: 25px; letter-spacing: 1px; color: #3e3328; position: relative; padding-bottom: 10px; }
-        .container h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background-color: #3e3328; }
-        .borang { display: flex; flex-direction: column; gap: 18px; }
-        .input-group { display: flex; flex-direction: column; gap: 6px; }
-        .input-group label { font-weight: bold; font-size: 14px; color: #5c4d3c; }
-        .input-group input, .input-group textarea { width: 100%; padding: 12px; border: 1px solid #c4b5a3; background-color: #faf9f6; border-radius: 6px; font-size: 14px; color: #333; transition: border 0.3s; }
-        .input-group input:focus, .input-group textarea:focus { outline: none; border-color: #3e3328; }
-        .btn-hantar { background-color: #3e3328; color: #fff; padding: 14px; border: none; border-radius: 6px; font-weight: bold; font-size: 15px; cursor: pointer; letter-spacing: 1px; transition: background 0.3s; margin-top: 10px; }
-        .btn-hantar:hover { background-color: #5c4d3c; }
-        .footer { background-color: #2b231b; color: #a89a8d; text-align: center; padding: 20px 10px; font-size: 13px; margin-top: auto; letter-spacing: 0.5px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="header">
-        <h1>[ KEDAI BARANG ANTIK ]</h1>
+        <h1>KEDAI BARANG ANTIK</h1>
         <div class="nav">
             <a href="index.html">HOME</a>
             <a href="butiran.html">MAKLUMAT BUTIRAN</a>
@@ -39,25 +19,29 @@
 
     <div class="container">
         <h2>HUBUNGI KAMI</h2>
-        <form class="borang" action="#" method="POST">
+        
+        <form class="borang">
             <div class="input-group">
-                <label for="nama">Nama:</label>
-                <input type="text" id="nama" required>
+                <label for="nama">Nama Penuh:</label>
+                <input type="text" id="nama" placeholder="Masukkan nama anda">
             </div>
+
             <div class="input-group">
-                <label for="emel">Emel:</label>
-                <input type="email" id="emel" required>
+                <label for="email">E-mel:</label>
+                <input type="email" id="email" placeholder="Masukkan e-mel anda">
             </div>
+
             <div class="input-group">
-                <label for="mesej">Mesej:</label>
-                <textarea id="mesej" rows="5" required></textarea>
+                <label for="mesej">Mesej / Pertanyaan:</label>
+                <textarea id="mesej" rows="5" placeholder="Tulis mesej anda di sini..."></textarea>
             </div>
-            <button type="submit" class="btn-hantar">HANTAR</button>
+
+            <button type="submit" class="btn-hantar">Hantar Mesej</button>
         </form>
     </div>
 
     <div class="footer">
-        @Kedai Barang Antik | Facebook | Instagram
+        Hakcipta Terpelihara &copy; 2026 Kedai Barang Antik Premium
     </div>
 
 </body>
