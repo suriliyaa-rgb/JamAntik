@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Barang Antik - Home</title>
+    <style>
+        /* --- KOD HIASAN CSS (SEMUA HALAMAN KONGSI STYLE NI) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f4f0ea; /* Warna latar belakang premium/vintage */
+            color: #3e3328;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #3e3328; /* Coklat gelap antik */
+            color: #f4f0ea;
+            text-align: center;
+            padding: 35px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            font-size: 26px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+        .nav {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #c4b5a3;
+            margin: 0 12px;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover, .nav a.active {
+            color: #ffffff;
+            background-color: #554637;
+            border-radius: 4px;
+        }
+        .container {
+            flex: 1;
+            max-width: 550px;
+            width: 90%;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid #e1dacb;
+        }
+        .container h2 {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+            color: #3e3328;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .container h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #3e3328;
+        }
+        
+        /* --- CSS TAMBAHAN UNTUK GAMBAR --- */
+        .produk-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Letak gambar kat tengah */
+            gap: 20px;
+        }
+        .produk-img {
+            width: 100%;
+            max-width: 300px; /* Hadkan saiz lebar gambar biar tak besar gedabak */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            border: 4px solid #f4f0ea;
+        }
+
+        .content-box {
+            width: 100%;
+        }
+        .content-box p {
+            font-size: 16px;
+            margin-bottom: 18px;
+            line-height: 1.6;
+            border-bottom: 1px dashed #e1dacb;
+            padding-bottom: 10px;
+        }
+        .content-box p strong {
+            color: #5c4d3c;
+            display: inline-block;
+            width: 150px;
+        }
+        .footer {
+            background-color: #2b231b;
+            color: #a89a8d;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 13px;
+            margin-top: auto;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>[ KEDAI BARANG ANTIK ]</h1>
+        <div class="nav">
+            <a href="index.html" class="active">HOME</a>
+            <a href="butiran.html">MAKLUMAT BUTIRAN</a>
+            <a href="hubungi.html">HUBUNGI KAMI</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>JAM ANTIK</h2>
+        
+        <div class="produk-container">
+            <img src="images/JamDinding.jpg" alt="Jam Antik Klasik" class="produk-img">
+
+            <div class="content-box">
+                <p><strong>Nama Barang:</strong> Jam Antik</p>
+                <p><strong>Harga :</strong> RM500</p>
+                <p><strong>Keterangan Ringkas:</strong> Jam antik klasik tahun 1960</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        @Kedai Barang Antik | Facebook | Instagram
+    </div>
+
+</body>
+</html>
