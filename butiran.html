@@ -4,27 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kedai Barang Antik - Butiran</title>
-    <style>
-        /* Salin bulat-bulat CSS yang sama supaya reka bentuk konsisten */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-        body { background-color: #f4f0ea; color: #3e3328; display: flex; flex-direction: column; min-height: 100vh; }
-        .header { background-color: #3e3328; color: #f4f0ea; text-align: center; padding: 35px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .header h1 { font-size: 26px; letter-spacing: 2px; margin-bottom: 15px; }
-        .nav { font-size: 15px; font-weight: bold; }
-        .nav a { text-decoration: none; color: #c4b5a3; margin: 0 12px; padding: 5px 10px; transition: all 0.3s ease; }
-        .nav a:hover, .nav a.active { color: #ffffff; background-color: #554637; border-radius: 4px; }
-        .container { flex: 1; max-width: 550px; width: 90%; margin: 50px auto; background: #ffffff; padding: 35px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e1dacb; }
-        .container h2 { font-size: 22px; text-align: center; margin-bottom: 25px; letter-spacing: 1px; color: #3e3328; position: relative; padding-bottom: 10px; }
-        .container h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background-color: #3e3328; }
-        .content-box p { font-size: 16px; margin-bottom: 18px; line-height: 1.6; border-bottom: 1px dashed #e1dacb; padding-bottom: 10px; }
-        .content-box p strong { color: #5c4d3c; display: inline-block; width: 150px; }
-        .footer { background-color: #2b231b; color: #a89a8d; text-align: center; padding: 20px 10px; font-size: 13px; margin-top: auto; letter-spacing: 0.5px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="header">
-        <h1>[ KEDAI BARANG ANTIK ]</h1>
+        <h1>KEDAI BARANG ANTIK</h1>
         <div class="nav">
             <a href="index.html">HOME</a>
             <a href="butiran.html" class="active">MAKLUMAT BUTIRAN</a>
@@ -33,17 +18,24 @@
     </div>
 
     <div class="container">
-        <h2>MAKLUMAT BUTIRAN</h2>
-        <div class="content-box">
-            <p><strong>Sejarah Barang:</strong> Jam ini digunakan sejak tahun 1960</p>
-            <p><strong>Bahan:</strong> Kayu dan Besi</p>
-            <p><strong>Saiz:</strong> 30cm × 20cm</p>
-            <p><strong>Keadaan Barang:</strong> Masih berfungsi dengan baik</p>
+        <h2>MAKLUMAT BUTIRAN PRODUK</h2>
+        
+        <div class="produk-container">
+            <!-- Gambar Jam Antik Awak -->
+            <img src="images/JamDinding.jpg" alt="Jam Dinding Antik" class="produk-img">
+            
+            <div class="content-box">
+                <p><strong>Nama Produk:</strong> Jam Dinding Klasik Retro</p>
+                <p><strong>Jenis Barang:</strong> Jam Dinding Antik / Vintage</p>
+                <p><strong>Tahun Dibuat:</strong> Sekitar Tahun 1970-an</p>
+                <p><strong>Status Stok:</strong> Masih Ada (Edisi Terhad)</p>
+                <p><strong>Anggaran Harga:</strong> RM 450.00</p>
+            </div>
         </div>
     </div>
 
     <div class="footer">
-        @Kedai Barang Antik | Facebook | Instagram
+        Hakcipta Terpelihara &copy; 2026 Kedai Barang Antik Premium
     </div>
 
 </body>
